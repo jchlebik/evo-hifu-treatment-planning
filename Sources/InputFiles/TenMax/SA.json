@@ -1,0 +1,11 @@
+{
+    "numberOfIterations": 500,
+    "dimension" : 20,
+    "initTemperature": 100,
+    "temperatureStep" : 0.1,
+    "minConstraint" : 0,
+    "maxConstraint" : 10,
+    "optimalScore" : 200,
+    "rngSeed" : 12345678,
+    "isVerboseOutput": 0
+}

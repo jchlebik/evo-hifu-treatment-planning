@@ -1,0 +1,25 @@
+#!/bin/bash
+#PBS -q qprod
+#PBS -l select=1:ncpus=24,walltime=8:00:00
+#PBS -A DD-19-32
+#PBS -o ../outlogs
+#PBS -e ../errlogs
+
+cd $PBS_O_WORKDIR/..
+
+digits=12       # number of digits in seed
+a=$(date +%s)
+seed=$((a*RANDOM))
+
+sonications=15
+variables=$((sonications*4))
+bench="flower"
+
+LOG_FILE="Outputs/HIFU/${bench}/${sonications}/cmaes/cmaes_${PBS_ARRAY_INDEX}.optOut"
+
+while [ ${#seed} -lt 12 ]; do
+    seed="${seed}$RANDOM"
+done
+
+ml intel/2019a
+./cmaes_hifu 500 16 0 ${seed} 1 > ${LOG_FILE}
