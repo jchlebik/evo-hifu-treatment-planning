@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>fastBeamPattern :: Functions (k-Wave)</title>
+	<link rel="stylesheet" href="kwavehelpstyle.css" type="text/css">
+</head>
+
+<body>
+<div class="content">
+
+<h1>fastBeamPattern</h1>
+<p class="purpose">Calculate beam pattern from an arbitrary phased array.</p>
+
+<h2>Syntax</h2>
+
+<pre class="codeinput">
+[amp_out, phase_out] = fastBeamPattern(amp_in, phase_in, dx, f, c0)
+[amp_out, phase_out] = fastBeamPattern(amp_in, phase_in, dx, f, c0, ...)
+[amp_out, phase_out, field_t1] = fastBeamPattern(amp_in, phase_in, dx, f0, c0, ...)
+[amp_out, phase_out, field_t1, field_t2] = fastBeamPattern(amp_in, phase_in, dx, f0, c0, ...)
+</pre>
+
+<h2>Description</h2>
+<p><code>fastBeamPattern</code> calculates the steady state beam pattern (amplitude and phase) from an arbitrary phased array driven by a single frequency continuous wave sinusoid in a homogeneous and lossless medium. The phased array is defined in completely general form as a matrix of amplitude and phase. This allows arrays of arbitrary geometry and numbers of elements to be defined.</p>
+
+<p>The solution is based on the Green's function for the homogeneous wave equation expressed in the spatial frequency domain or k-space. The temporal convolution integral is solved analytically, and the remaining integrals are expressed in the form of the spatial Fourier transform. This allows the acoustic pressure for all spatial positions at any time t > 0 to be calculated in a single step without numerical quadrature. To avoid wave wrapping, the domain size used for calculation is automatically expanded to a suitable dimension size with small prime factors.</p>
+
+<h2>Examples</h2>
+
+<p>The example below shows how to compute the steady state amplitude and phase from a rectangular piston transducer in 3D. The central plane through the transducer is plotted.</p>
+
+<pre class="codeinput">
+<span class="comment">% define source parameters</span>
+c       = 1510;         <span class="comment">% [m/s]</span>
+f       = 2e6;          <span class="comment">% [Hz]</span>
+ap_size = 6e-3;         <span class="comment">% [m]</span>
+
+<span class="comment">% define grid parameters</span>
+Nx = 128;               <span class="comment">% [grid points]</span>
+Ny = 64;                <span class="comment">% [grid points]</span>
+Nz = 64;                <span class="comment">% [grid points]</span>
+dx = 2e-4;              <span class="comment">% [m]</span>
+
+<span class="comment">% convert aperture size to grid points</span>
+ap_size = round(ap_size / (2 * dx));
+
+<span class="comment">% create a square source aperture</span>
+amp_in = zeros(Nx, Ny, Nz);
+amp_in(1, Ny/2 - ap_size + 1:Ny/2 + ap_size, Nz/2 - ap_size + 1:Nz/2 + ap_size) = 1;
+
+<span class="comment">% calculate beam pattern</span>
+[fbp_amp, fbp_phase] = fastBeamPattern(amp_in, 0, dx, f, c);
+
+<span class="comment">% extract just the central plane</span>
+fbp_amp = squeeze(fbp_amp(:, :, Nz/2)).';
+fbp_phase = squeeze(fbp_phase(:, :, Nz/2)).';
+
+<span class="comment">% create plot axes</span>
+x_axis = (0:Nx - 1) * dx * 1e3;
+y_axis = (-Ny/2:Ny/2 - 1) * dx * 1e3;
+
+<span class="comment">% plot the amplitude</span>
+figure;
+subplot(2, 1, 1);
+imagesc(x_axis, y_axis, fbp_amp);
+axis image;
+xlabel('x-position [mm]');
+ylabel('y-position [mm]');
+
+subplot(2, 1, 2);
+imagesc(x_axis, y_axis, fbp_phase);
+axis image;
+xlabel('x-position [mm]');
+ylabel('y-position [mm]');
+colormap(parula(256));
+</pre>
+
+<img vspace="5" hspace="5" src="images/fastBeamPattern_01.png" style="width:560px;height:420px;" alt="">
+
+<p>The example below shows how to use the phase input to steer the output from a linear array transducer in 2D. The steady state pressure field for each steering angle is dynamically updated.</p>
+
+<pre class="codeinput">
+<span class="comment">% define source parameters</span>
+f = 1e6;        <span class="comment">% [Hz]</span>
+c = 1500;       <span class="comment">% [m/s]</span>
+
+<span class="comment">% define grid size</span>
+Nx = 256;       <span class="comment">% [grid points]</span>
+Ny = 196;       <span class="comment">% [grid points]</span>
+dx = 0.1e-3;    <span class="comment">% [m]</span>
+
+<span class="comment">% create linear aperture</span>
+aperture_width = 80;
+amp_in = zeros(Nx, Ny);
+amp_in(1, Ny/2 - aperture_width/2 + 1: Ny/2 + aperture_width/2) = 1;
+
+<span class="comment">% define range of steering angles</span>
+angle_array = 0:2:30;
+
+<span class="comment">% create figure window and plot axes</span>
+figure;
+x_axis = (0:Nx - 1) * dx * 1e3;
+y_axis = (-Ny/2:Ny/2 - 1) * dx * 1e3;
+
+<span class="comment">% loop through steering angles</span>
+for index = 1:length(angle_array)
+    
+    <span class="comment">% current value of steering angle</span>
+    steering_angle = angle_array(index);
+    
+    <span class="comment">% calculate phase offset</span>
+    phase_term = 2 * pi * f * dx * (0:aperture_width - 1) * sind(steering_angle) / c;
+    
+    <span class="comment">% assign phase map</span>
+    phase_in = zeros(Nx, Ny);
+    phase_in(1, Ny/2 - aperture_width/2 + 1: Ny/2 + aperture_width/2) = phase_term;
+
+    <span class="comment">% compute beam pattern</span>
+    amp_out = fastBeamPattern(amp_in, phase_in, dx, f, c);
+    
+    <span class="comment">% plot</span>
+    imagesc(y_axis, x_axis, amp_out);
+    axis image;
+    xlabel('y-position [mm]');
+    ylabel('x-position [mm]');
+    title(['FBP - Amplitude (angle  = ' num2str(steering_angle) ' degrees)']);
+    colormap(parula(256));
+    drawnow;
+    
+end
+</pre>
+
+<img vspace="5" hspace="5" src="images/fastBeamPattern_02.png" style="width:560px;height:420px;" alt="">
+
+<h2>Inputs</h2>
+
+<table class="body">
+
+    <tr valign="top">
+        <td width = "150"><code>amp_in</code></td>
+        <td>matrix of the source amplitude at each grid point [Pa]</td>
+    </tr>    
+    
+    <tr valign="top">
+        <td width = "150"><code>phase_in</code></td>
+        <td>matrix of the source phase at each grid point [rad]</td>
+    </tr>      
+    
+    <tr valign="top">
+        <td><code>dx</code></td>
+        <td>grid spacing [m]</td>
+    </tr>  
+   
+    <tr valign="top">
+        <td><code>f0</code></td>
+        <td>source frequency [Hz]</td>
+    </tr> 
+    
+    <tr valign="top">
+        <td><code>c0</code></td>
+        <td>medium sound speed [m/s]</td>
+    </tr>     
+    
+</table>
+
+<h2>Optional Inputs</h2>
+
+<p>Optional 'string', value pairs that may be used to modify the default computational settings.</p>
+
+<table cellspacing="0" class="body" cellpadding="4" border="2">
+    <colgroup>
+        <col width="18%"><col width="18%"><col width="18%"><col width="46%">
+    </colgroup>
+    
+    <thead>
+        <tr valign="top">
+            <th bgcolor="#B2B2B2">Input</th>
+            <th bgcolor="#B2B2B2">Valid Settings</th>
+            <th bgcolor="#B2B2B2">Default</th>
+            <th bgcolor="#B2B2B2">Description</th>
+        </tr>
+    </thead>
+    
+    <tbody>        
+        
+        <tr valign="top">
+            <td bgcolor="#F2F2F2"><code>'GridExpansionFactor'</code></td>
+            <td bgcolor="#F2F2F2"><em>(numeric scalar)</em></td>
+            <td bgcolor="#F2F2F2"><code>1.1</code></td>            
+            <td bgcolor="#F2F2F2">Option to specify the multiplicative factor used to calculate the minimum expanded grid size to avoid wave wrapping based on t1. Note, setting a value for the optional input <code>'ExpandedGridSize'</code> will override this value.</td>
+        </tr> 
+
+        <tr valign="top">
+            <td bgcolor="#F2F2F2"><code>'GridSearchRange'</code></td>
+            <td bgcolor="#F2F2F2"><em>(integer numeric scalar)</em></td>
+            <td bgcolor="#F2F2F2"><code>50</code></td>            
+            <td bgcolor="#F2F2F2">Option to set the search range used to find the expanded grid size with the smallest prime factors. Note, setting a value for the optional input <code>'ExpandedGridSize'</code> will override this value.</td>
+        </tr> 
+
+        <tr valign="top">
+            <td bgcolor="#F2F2F2"><code>'SaveToDisk'</code></td>
+            <td bgcolor="#F2F2F2"><em>(string)</em></td>
+            <td bgcolor="#F2F2F2"><code>false</code></td>            
+            <td bgcolor="#F2F2F2">String containing a filename (including pathname if required). If set, after the precomputation phase, the variables used in calculation are saved to the specified location in HDF5 format. The function then exits. The saved variables can be used to run simulations using the C++ code.</td>
+        </tr> 
+
+        <tr valign="top">
+            <td bgcolor="#F2F2F2"><code>'Time'</code></td>
+            <td bgcolor="#F2F2F2"><em>(numeric scalar)</em></td>
+            <td bgcolor="#F2F2F2"><code>'auto'</code></td>            
+            <td bgcolor="#F2F2F2">Option to specify the time <code>t1</code> at which the wavefield is calculated to extract the amplitude and phase</td>
+        </tr>              
+        
+        <tr valign="top">
+            <td bgcolor="#F2F2F2"><code>'TimeExpansionFactor'</code></td>
+            <td bgcolor="#F2F2F2"><em>(numeric scalar)</em></td>
+            <td bgcolor="#F2F2F2"><code>[-1, 1]</code></td>            
+            <td bgcolor="#F2F2F2">Option to specify the multiplicative factor used to calculate <code>t1</code> based on the time taken to propagate across the longest grid diagonal. Note, setting a value for the optional input <code>'Time'</code> will override this value.</td>
+        </tr>           
+        
+        <tr valign="top">
+            <td bgcolor="#F2F2F2"><code>'ExpandedGridSize'</code></td>
+            <td bgcolor="#F2F2F2"><em>(numeric vector)</em></td>
+            <td bgcolor="#F2F2F2"><code>'auto'</code></td>            
+            <td bgcolor="#F2F2F2">Option to specify the size of the grid after expansion used to avoid wave wrapping.</td>
+        </tr>                   
+                
+    </tbody>
+</table>
+
+<h2>Outputs</h2>
+
+<table class="body">
+
+    <tr valign="top">
+        <td width = "150"><code>amp_out</code></td>
+        <td>matrix of the output amplitude at each grid point in steady state [Pa]</td>
+    </tr>
+	
+    <tr valign="top">
+        <td width = "150"><code>phase_out</code></td>
+        <td>matrix of the output phase at each grid point in steady state [rad]</td>
+    </tr> 	
+	
+    <tr valign="top">
+        <td width = "150"><code> field_t1</code></td>
+        <td>pressure field at time t1</td>
+    </tr>
+	
+    <tr valign="top">
+        <td width = "150"><code> field_t2</code></td>
+        <td>pressure field at time t2</td>
+    </tr> 		
+	
+</table>
+
+<h2>See Also</h2>
+
+<code><a href="fastBeamPatternC.html">fastBeamPatternC</a></code>, <code><a href="kspaceFirstOrder2D.html">kspaceFirstOrder2D</a></code>, <code><a href="kspaceFirstOrder3D.html">kspaceFirstOrder3D</a></code>
+
+</div></body></html>

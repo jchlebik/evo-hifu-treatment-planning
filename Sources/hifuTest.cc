@@ -7,7 +7,7 @@
  *              xchleb07@stud.fit.vutbr.com
  * 
  * @brief       A small program capable of running one heat diffusion simulation \n
- *				and printing result to the standard error output
+ *              and printing result to the standard error output
  * 
  * @version     0.1
  * 
@@ -18,7 +18,11 @@
 #include "FitnessFunc/FitnessFunction.h"
 #include <ctime>
 
-
+/**
+ * @brief the main funcion of small HIFU simulation test.
+ * 
+ * @return int    - the return value of the program
+ */
 int main()
 {
 

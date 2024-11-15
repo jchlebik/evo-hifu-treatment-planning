@@ -1,9 +1,0 @@
-{
-    "numberOfIterations": 1000,
-    "dimension" : 3,
-    "initTemperature": 100,
-    "temperatureStep" : 0.1,
-    "optimalScore" : 0.0,
-    "rngSeed" : 12345678,
-    "isVerboseOutput": 1
-}

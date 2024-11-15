@@ -1,0 +1,36 @@
+# CMake generated Testfile for 
+# Source directory: /mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test
+# Build directory: /mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/build/test
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(assert-test "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/build/bin/assert-test")
+set_tests_properties(assert-test PROPERTIES  _BACKTRACE_TRIPLES "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;87;add_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;90;add_fmt_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;0;")
+add_test(chrono-test "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/build/bin/chrono-test")
+set_tests_properties(chrono-test PROPERTIES  _BACKTRACE_TRIPLES "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;87;add_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;91;add_fmt_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;0;")
+add_test(color-test "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/build/bin/color-test")
+set_tests_properties(color-test PROPERTIES  _BACKTRACE_TRIPLES "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;87;add_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;92;add_fmt_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;0;")
+add_test(core-test "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/build/bin/core-test")
+set_tests_properties(core-test PROPERTIES  _BACKTRACE_TRIPLES "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;87;add_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;93;add_fmt_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;0;")
+add_test(gtest-extra-test "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/build/bin/gtest-extra-test")
+set_tests_properties(gtest-extra-test PROPERTIES  _BACKTRACE_TRIPLES "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;87;add_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;94;add_fmt_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;0;")
+add_test(format-test "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/build/bin/format-test")
+set_tests_properties(format-test PROPERTIES  _BACKTRACE_TRIPLES "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;87;add_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;95;add_fmt_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;0;")
+add_test(format-impl-test "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/build/bin/format-impl-test")
+set_tests_properties(format-impl-test PROPERTIES  _BACKTRACE_TRIPLES "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;87;add_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;100;add_fmt_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;0;")
+add_test(locale-test "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/build/bin/locale-test")
+set_tests_properties(locale-test PROPERTIES  _BACKTRACE_TRIPLES "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;87;add_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;102;add_fmt_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;0;")
+add_test(ostream-test "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/build/bin/ostream-test")
+set_tests_properties(ostream-test PROPERTIES  _BACKTRACE_TRIPLES "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;87;add_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;103;add_fmt_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;0;")
+add_test(compile-test "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/build/bin/compile-test")
+set_tests_properties(compile-test PROPERTIES  _BACKTRACE_TRIPLES "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;87;add_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;104;add_fmt_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;0;")
+add_test(printf-test "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/build/bin/printf-test")
+set_tests_properties(printf-test PROPERTIES  _BACKTRACE_TRIPLES "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;87;add_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;105;add_fmt_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;0;")
+add_test(ranges-test "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/build/bin/ranges-test")
+set_tests_properties(ranges-test PROPERTIES  _BACKTRACE_TRIPLES "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;87;add_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;106;add_fmt_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;0;")
+add_test(scan-test "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/build/bin/scan-test")
+set_tests_properties(scan-test PROPERTIES  _BACKTRACE_TRIPLES "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;87;add_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;107;add_fmt_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;0;")
+add_test(posix-mock-test "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/build/bin/posix-mock-test")
+set_tests_properties(posix-mock-test PROPERTIES  _BACKTRACE_TRIPLES "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;133;add_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;0;")
+add_test(os-test "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/build/bin/os-test")
+set_tests_properties(os-test PROPERTIES  _BACKTRACE_TRIPLES "/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;87;add_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;134;add_fmt_test;/mnt/c/dev/Evo-Treatment-Plan/Sources/external/fmt/test/CMakeLists.txt;0;")

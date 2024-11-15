@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 ##
-# @file         parameterOptimiser.py
+# @file         paramOpt.py
 #
 # @author       Jakub Chlebik \n
 #               Faculty of Information Technology \n
 #               Brno University of Technology \n
 #               xchleb07@stud.fit.vutbr.com
 #
-# @brief        
+# @brief        A python script trying to find the optimal evolution parameters by usign meta-evolution. 
+#               UNFINISHED. Experimental and very computationaly expensiver. For use please study the implementation.
 #
 # @version      0.1
 #
@@ -122,6 +123,15 @@ def parseOptimizerConfiguration(configJsonPath):
     return optimizerArguments
 # END OF parseOptimizerConfiguration #############################################
 
+##
+# @brief: Wrapper around the fitness function. \n
+#         Collects the data and runs the optimizer, using the result as a fitness for this chromosome
+# 
+# @param [in]   x               - the chromosome we wish to test
+# @param [in]   indexes         - a list of indexes
+# @param [in]   optimizerName   - name of the runned optimizer we are trying to find inputs for
+# @param [in]   config          - configuration dictionary for the optimizer
+# @return int                   - fitness value for the given input
 def fitnessWrapper(x, indexes, optimizerName, config):
     fitnessWrapper.counter += 1
     i = 0
@@ -141,12 +151,12 @@ def fitnessWrapper(x, indexes, optimizerName, config):
     print(res)
     return res
 fitnessWrapper.counter = 0
+# END OF fitnessWrapper #############################################
 
 ##
 # @brief: Main entry point of the script.
 # 
-if __name__ == "__main__":
-
+def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-x', '--executable-path', help="path to the executable", required=True)
     parser.add_argument('-a', '--arguments', help="path to JSON file specifying the arguments needed to run the optimizer algorithm in correct order", required=True)
@@ -210,5 +220,8 @@ if __name__ == "__main__":
 
     except Exception as err:
         print(err)
-
 # END of MAIN ###################################################################
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>fastBeamPatternC :: Functions (k-Wave)</title>
+	<link rel="stylesheet" href="kwavehelpstyle.css" type="text/css">
+</head>
+
+<body>
+<div class="content">
+
+<h1>fastBeamPatternC</h1>
+<p class="purpose">Calculate beam pattern using C++ code.</p>
+
+<h2>Syntax</h2>
+
+<p>See <code><a href="fastBeamPattern.html">fastBeamPattern</a></code>. Note, the outputs <code>field_t1</code> and <code>field_t2</code> are not supported.</p>
+
+<h2>Description</h2>
+<p><code>fastBeamPatternC</code> provides an blind interface to the C++ version of fastBeamPattern (called fastBeamPattern-OMP). The function works by appending the optional input 'SaveToDisk' to the user inputs and then calling fastBeamPattern to save the input files to disk. The C++ code is run using the system command. The output files are then automatically loaded from disk and returned in the same fashion as fastBeamPattern. The input and output files are saved to the temporary directory native to the operating system, and are deleted after the function runs.</p>
+
+<p>This function requires the C++ binary/executable of <code>fastBeamPattern-OMP</code> to be downloaded from <a href="http://www.k-wave.org/download.php">www.k-wave.org/download.php</a> and placed in the "binaries" directory of the k-Wave toolbox. Alternatively, the name and location of the binary can be specified using the optional input parameters <code>'BinaryName'</code> and <code>'BinariesPath'</code>.</p>
+
+<h2>Optional Inputs</h2>
+
+<p>Optional 'string', value pairs that may be used to modify the default computational settings.</p>
+
+<table cellspacing="0" class="body" cellpadding="4" border="2">
+    <colgroup>
+        <col width="18%"><col width="18%"><col width="18%"><col width="46%">
+    </colgroup>
+    
+    <thead>
+        <tr valign="top">
+            <th bgcolor="#B2B2B2">Input</th>
+            <th bgcolor="#B2B2B2">Valid Settings</th>
+            <th bgcolor="#B2B2B2">Default</th>
+            <th bgcolor="#B2B2B2">Description</th>
+        </tr>
+    </thead>
+    
+    <tbody>        
+        
+        <tr valign="top">
+            <td bgcolor="#F2F2F2"><code>'BinaryName'</code></td>
+            <td bgcolor="#F2F2F2"><em>(string)</em></td>
+            <td bgcolor="#F2F2F2"><code>fastBeamPattern-OMP</code> on linux and <code>fastBeamPattern-OMP.exe</code> on windows</td>            
+            <td bgcolor="#F2F2F2">Name of the binary file.</td>
+        </tr> 
+
+        <tr valign="top">
+            <td bgcolor="#F2F2F2"><code>'BinaryPath'</code></td>
+            <td bgcolor="#F2F2F2"><em>(string)</em></td>
+            <td bgcolor="#F2F2F2"><code>'binaries/'</code></td>            
+            <td bgcolor="#F2F2F2">Path of the binary file.</td>
+        </tr> 
+
+        <tr valign="top">
+            <td bgcolor="#F2F2F2"><code>'DataName'</code></td>
+            <td bgcolor="#F2F2F2"><em>(string)</em></td>
+            <td bgcolor="#F2F2F2"><code>kwave_&lt;input/output&gt;_data_<date>.h5</code></td>            
+            <td bgcolor="#F2F2F2">Prefix used to generate a custom name for the input and output data files (this is appended with _input.h5 and _output.h5).</td>
+        </tr> 
+
+        <tr valign="top">
+            <td bgcolor="#F2F2F2"><code>'DataPath'</code></td>
+            <td bgcolor="#F2F2F2"><em>(string)</em></td>
+            <td bgcolor="#F2F2F2"><code>tempdir</code></td>            
+            <td bgcolor="#F2F2F2">Location of the folder where the input and output HDF5 files should be stored.</td>
+        </tr>              
+        
+        <tr valign="top">
+            <td bgcolor="#F2F2F2"><code>'DeleteData'</code></td>
+            <td bgcolor="#F2F2F2"><em>(Boolean scalar)</em></td>
+            <td bgcolor="#F2F2F2"><code>true</code></td>            
+            <td bgcolor="#F2F2F2"> Boolean controlling whether the input and output HDF5 files should be deleted after running the simulation.</td>
+        </tr>           
+                
+    </tbody>
+</table>
+
+<h2>See Also</h2>
+
+<code><a href="fastBeamPattern.html">fastBeamPattern</a></code>
+
+</div></body></html>

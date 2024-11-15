@@ -1,0 +1,16 @@
+assert-test 1 0.010213
+chrono-test 1 0.0294912
+color-test 1 0.01697
+core-test 1 0.0261565
+gtest-extra-test 1 0.0182026
+format-test 1 0.0433622
+format-impl-test 1 0.0230101
+locale-test 1 0.016434
+ostream-test 1 0.0191828
+compile-test 1 0.0224255
+printf-test 1 0.0404247
+ranges-test 1 0.0148677
+scan-test 1 0.0180933
+posix-mock-test 1 0.0335209
+os-test 1 0.0427046
+---

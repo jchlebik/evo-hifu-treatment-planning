@@ -1,0 +1,1322 @@
+Start testing: Mar 22 11:09 CET
+----------------------------------------------------------
+1/15 Testing: assert-test
+1/15 Test: assert-test
+Command: "/home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/bin/assert-test"
+Directory: /home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/test
+"assert-test" start time: Mar 22 11:09 CET
+Output:
+----------------------------------------------------------
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from AssertTest
+[ RUN      ] AssertTest.Fail
+[       OK ] AssertTest.Fail (0 ms)
+[ RUN      ] AssertTest.DanglingElse
+[       OK ] AssertTest.DanglingElse (0 ms)
+[----------] 2 tests from AssertTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"assert-test" end time: Mar 22 11:09 CET
+"assert-test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/15 Testing: chrono-test
+2/15 Test: chrono-test
+Command: "/home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/bin/chrono-test"
+Directory: /home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/test
+"chrono-test" start time: Mar 22 11:09 CET
+Output:
+----------------------------------------------------------
+[==========] Running 23 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 7 tests from TimeTest
+[ RUN      ] TimeTest.Format
+[       OK ] TimeTest.Format (2 ms)
+[ RUN      ] TimeTest.GrowBuffer
+[       OK ] TimeTest.GrowBuffer (0 ms)
+[ RUN      ] TimeTest.FormatToEmptyContainer
+[       OK ] TimeTest.FormatToEmptyContainer (0 ms)
+[ RUN      ] TimeTest.EmptyResult
+[       OK ] TimeTest.EmptyResult (0 ms)
+[ RUN      ] TimeTest.LocalTime
+[       OK ] TimeTest.LocalTime (0 ms)
+[ RUN      ] TimeTest.GMTime
+[       OK ] TimeTest.GMTime (0 ms)
+[ RUN      ] TimeTest.TimePoint
+[       OK ] TimeTest.TimePoint (0 ms)
+[----------] 7 tests from TimeTest (2 ms total)
+
+[----------] 16 tests from ChronoTest
+[ RUN      ] ChronoTest.FormatDefault
+[       OK ] ChronoTest.FormatDefault (3 ms)
+[ RUN      ] ChronoTest.FormatWide
+[       OK ] ChronoTest.FormatWide (1 ms)
+[ RUN      ] ChronoTest.Align
+[       OK ] ChronoTest.Align (0 ms)
+[ RUN      ] ChronoTest.FormatSpecs
+[       OK ] ChronoTest.FormatSpecs (0 ms)
+[ RUN      ] ChronoTest.InvalidSpecs
+[       OK ] ChronoTest.InvalidSpecs (2 ms)
+[ RUN      ] ChronoTest.Locale
+ja_JP.utf8 locale is missing.
+[       OK ] ChronoTest.Locale (1 ms)
+[ RUN      ] ChronoTest.FormatDefaultFP
+[       OK ] ChronoTest.FormatDefaultFP (0 ms)
+[ RUN      ] ChronoTest.FormatPrecision
+[       OK ] ChronoTest.FormatPrecision (0 ms)
+[ RUN      ] ChronoTest.FormatFullSpecs
+[       OK ] ChronoTest.FormatFullSpecs (0 ms)
+[ RUN      ] ChronoTest.FormatSimpleQq
+[       OK ] ChronoTest.FormatSimpleQq (0 ms)
+[ RUN      ] ChronoTest.FormatPrecisionQq
+[       OK ] ChronoTest.FormatPrecisionQq (0 ms)
+[ RUN      ] ChronoTest.FormatFullSpecsQq
+[       OK ] ChronoTest.FormatFullSpecsQq (0 ms)
+[ RUN      ] ChronoTest.InvalidWidthId
+[       OK ] ChronoTest.InvalidWidthId (0 ms)
+[ RUN      ] ChronoTest.InvalidColons
+[       OK ] ChronoTest.InvalidColons (0 ms)
+[ RUN      ] ChronoTest.NegativeDurations
+[       OK ] ChronoTest.NegativeDurations (0 ms)
+[ RUN      ] ChronoTest.SpecialDurations
+[       OK ] ChronoTest.SpecialDurations (0 ms)
+[----------] 16 tests from ChronoTest (7 ms total)
+
+[----------] Global test environment tear-down
+[==========] 23 tests from 2 test cases ran. (12 ms total)
+[  PASSED  ] 23 tests.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"chrono-test" end time: Mar 22 11:09 CET
+"chrono-test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/15 Testing: color-test
+3/15 Test: color-test
+Command: "/home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/bin/color-test"
+Directory: /home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/test
+"color-test" start time: Mar 22 11:09 CET
+Output:
+----------------------------------------------------------
+[==========] Running 3 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 3 tests from ColorsTest
+[ RUN      ] ColorsTest.ColorsPrint
+[       OK ] ColorsTest.ColorsPrint (0 ms)
+[ RUN      ] ColorsTest.Format
+[       OK ] ColorsTest.Format (0 ms)
+[ RUN      ] ColorsTest.FormatToOutAcceptsTextStyle
+[       OK ] ColorsTest.FormatToOutAcceptsTextStyle (0 ms)
+[----------] 3 tests from ColorsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"color-test" end time: Mar 22 11:09 CET
+"color-test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/15 Testing: core-test
+4/15 Test: core-test
+Command: "/home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/bin/core-test"
+Directory: /home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/test
+"core-test" start time: Mar 22 11:09 CET
+Output:
+----------------------------------------------------------
+[==========] Running 59 tests from 23 test cases.
+[----------] Global test environment set-up.
+[----------] 11 tests from BufferTest
+[ RUN      ] BufferTest.Noncopyable
+[       OK ] BufferTest.Noncopyable (0 ms)
+[ RUN      ] BufferTest.Nonmoveable
+[       OK ] BufferTest.Nonmoveable (0 ms)
+[ RUN      ] BufferTest.Indestructible
+[       OK ] BufferTest.Indestructible (0 ms)
+[ RUN      ] BufferTest.Ctor
+[       OK ] BufferTest.Ctor (0 ms)
+[ RUN      ] BufferTest.Access
+[       OK ] BufferTest.Access (0 ms)
+[ RUN      ] BufferTest.TryResize
+[       OK ] BufferTest.TryResize (0 ms)
+[ RUN      ] BufferTest.TryResizePartial
+[       OK ] BufferTest.TryResizePartial (0 ms)
+[ RUN      ] BufferTest.Clear
+[       OK ] BufferTest.Clear (0 ms)
+[ RUN      ] BufferTest.Append
+[       OK ] BufferTest.Append (0 ms)
+[ RUN      ] BufferTest.AppendPartial
+[       OK ] BufferTest.AppendPartial (0 ms)
+[ RUN      ] BufferTest.AppendAllocatesEnoughStorage
+[       OK ] BufferTest.AppendAllocatesEnoughStorage (0 ms)
+[----------] 11 tests from BufferTest (0 ms total)
+
+[----------] 8 tests from ArgTest
+[ RUN      ] ArgTest.FormatArgs
+[       OK ] ArgTest.FormatArgs (0 ms)
+[ RUN      ] ArgTest.MakeValueWithCustomContext
+[       OK ] ArgTest.MakeValueWithCustomContext (0 ms)
+[ RUN      ] ArgTest.CharArg
+[       OK ] ArgTest.CharArg (0 ms)
+[ RUN      ] ArgTest.StringArg
+[       OK ] ArgTest.StringArg (0 ms)
+[ RUN      ] ArgTest.WStringArg
+[       OK ] ArgTest.WStringArg (0 ms)
+[ RUN      ] ArgTest.PointerArg
+[       OK ] ArgTest.PointerArg (0 ms)
+[ RUN      ] ArgTest.CustomArg
+[       OK ] ArgTest.CustomArg (0 ms)
+[ RUN      ] ArgTest.VisitInvalidArg
+[       OK ] ArgTest.VisitInvalidArg (0 ms)
+[----------] 8 tests from ArgTest (0 ms total)
+
+[----------] 1 test from NumericArgTest/0, where TypeParam = bool
+[ RUN      ] NumericArgTest/0.MakeAndVisit
+[       OK ] NumericArgTest/0.MakeAndVisit (0 ms)
+[----------] 1 test from NumericArgTest/0 (0 ms total)
+
+[----------] 1 test from NumericArgTest/1, where TypeParam = signed char
+[ RUN      ] NumericArgTest/1.MakeAndVisit
+[       OK ] NumericArgTest/1.MakeAndVisit (0 ms)
+[----------] 1 test from NumericArgTest/1 (0 ms total)
+
+[----------] 1 test from NumericArgTest/2, where TypeParam = unsigned char
+[ RUN      ] NumericArgTest/2.MakeAndVisit
+[       OK ] NumericArgTest/2.MakeAndVisit (0 ms)
+[----------] 1 test from NumericArgTest/2 (0 ms total)
+
+[----------] 1 test from NumericArgTest/3, where TypeParam = int
+[ RUN      ] NumericArgTest/3.MakeAndVisit
+[       OK ] NumericArgTest/3.MakeAndVisit (0 ms)
+[----------] 1 test from NumericArgTest/3 (1 ms total)
+
+[----------] 1 test from NumericArgTest/4, where TypeParam = unsigned short
+[ RUN      ] NumericArgTest/4.MakeAndVisit
+[       OK ] NumericArgTest/4.MakeAndVisit (0 ms)
+[----------] 1 test from NumericArgTest/4 (0 ms total)
+
+[----------] 1 test from NumericArgTest/5, where TypeParam = int
+[ RUN      ] NumericArgTest/5.MakeAndVisit
+[       OK ] NumericArgTest/5.MakeAndVisit (0 ms)
+[----------] 1 test from NumericArgTest/5 (0 ms total)
+
+[----------] 1 test from NumericArgTest/6, where TypeParam = unsigned int
+[ RUN      ] NumericArgTest/6.MakeAndVisit
+[       OK ] NumericArgTest/6.MakeAndVisit (0 ms)
+[----------] 1 test from NumericArgTest/6 (0 ms total)
+
+[----------] 1 test from NumericArgTest/7, where TypeParam = long
+[ RUN      ] NumericArgTest/7.MakeAndVisit
+[       OK ] NumericArgTest/7.MakeAndVisit (0 ms)
+[----------] 1 test from NumericArgTest/7 (0 ms total)
+
+[----------] 1 test from NumericArgTest/8, where TypeParam = unsigned long
+[ RUN      ] NumericArgTest/8.MakeAndVisit
+[       OK ] NumericArgTest/8.MakeAndVisit (0 ms)
+[----------] 1 test from NumericArgTest/8 (0 ms total)
+
+[----------] 1 test from NumericArgTest/9, where TypeParam = long long
+[ RUN      ] NumericArgTest/9.MakeAndVisit
+[       OK ] NumericArgTest/9.MakeAndVisit (0 ms)
+[----------] 1 test from NumericArgTest/9 (0 ms total)
+
+[----------] 1 test from NumericArgTest/10, where TypeParam = unsigned long long
+[ RUN      ] NumericArgTest/10.MakeAndVisit
+[       OK ] NumericArgTest/10.MakeAndVisit (0 ms)
+[----------] 1 test from NumericArgTest/10 (0 ms total)
+
+[----------] 1 test from NumericArgTest/11, where TypeParam = float
+[ RUN      ] NumericArgTest/11.MakeAndVisit
+[       OK ] NumericArgTest/11.MakeAndVisit (0 ms)
+[----------] 1 test from NumericArgTest/11 (0 ms total)
+
+[----------] 1 test from NumericArgTest/12, where TypeParam = double
+[ RUN      ] NumericArgTest/12.MakeAndVisit
+[       OK ] NumericArgTest/12.MakeAndVisit (0 ms)
+[----------] 1 test from NumericArgTest/12 (0 ms total)
+
+[----------] 1 test from NumericArgTest/13, where TypeParam = long double
+[ RUN      ] NumericArgTest/13.MakeAndVisit
+[       OK ] NumericArgTest/13.MakeAndVisit (0 ms)
+[----------] 1 test from NumericArgTest/13 (0 ms total)
+
+[----------] 10 tests from FormatDynArgsTest
+[ RUN      ] FormatDynArgsTest.Basic
+[       OK ] FormatDynArgsTest.Basic (0 ms)
+[ RUN      ] FormatDynArgsTest.StringsAndRefs
+[       OK ] FormatDynArgsTest.StringsAndRefs (0 ms)
+[ RUN      ] FormatDynArgsTest.CustomFormat
+[       OK ] FormatDynArgsTest.CustomFormat (0 ms)
+[ RUN      ] FormatDynArgsTest.NamedInt
+[       OK ] FormatDynArgsTest.NamedInt (0 ms)
+[ RUN      ] FormatDynArgsTest.NamedStrings
+[       OK ] FormatDynArgsTest.NamedStrings (0 ms)
+[ RUN      ] FormatDynArgsTest.NamedArgByRef
+[       OK ] FormatDynArgsTest.NamedArgByRef (0 ms)
+[ RUN      ] FormatDynArgsTest.NamedCustomFormat
+[       OK ] FormatDynArgsTest.NamedCustomFormat (0 ms)
+[ RUN      ] FormatDynArgsTest.Clear
+[       OK ] FormatDynArgsTest.Clear (0 ms)
+[ RUN      ] FormatDynArgsTest.Reserve
+[       OK ] FormatDynArgsTest.Reserve (0 ms)
+[ RUN      ] FormatDynArgsTest.ThrowOnCopy
+[       OK ] FormatDynArgsTest.ThrowOnCopy (2 ms)
+[----------] 10 tests from FormatDynArgsTest (2 ms total)
+
+[----------] 3 tests from StringViewTest
+[ RUN      ] StringViewTest.ValueType
+[       OK ] StringViewTest.ValueType (0 ms)
+[ RUN      ] StringViewTest.Length
+[       OK ] StringViewTest.Length (0 ms)
+[ RUN      ] StringViewTest.Compare
+[       OK ] StringViewTest.Compare (0 ms)
+[----------] 3 tests from StringViewTest (0 ms total)
+
+[----------] 9 tests from CoreTest
+[ RUN      ] CoreTest.HasFormatter
+[       OK ] CoreTest.HasFormatter (0 ms)
+[ RUN      ] CoreTest.FormatterOverridesImplicitConversion
+[       OK ] CoreTest.FormatterOverridesImplicitConversion (0 ms)
+[ RUN      ] CoreTest.Format
+[       OK ] CoreTest.Format (0 ms)
+[ RUN      ] CoreTest.FormatTo
+[       OK ] CoreTest.FormatTo (0 ms)
+[ RUN      ] CoreTest.ToStringViewForeignStrings
+[       OK ] CoreTest.ToStringViewForeignStrings (0 ms)
+[ RUN      ] CoreTest.FormatForeignStrings
+[       OK ] CoreTest.FormatForeignStrings (0 ms)
+[ RUN      ] CoreTest.FormatImplicitlyConvertibleToStringView
+[       OK ] CoreTest.FormatImplicitlyConvertibleToStringView (0 ms)
+[ RUN      ] CoreTest.FormatExplicitlyConvertibleToStringView
+[       OK ] CoreTest.FormatExplicitlyConvertibleToStringView (0 ms)
+[ RUN      ] CoreTest.DisabledRValueConversion
+[       OK ] CoreTest.DisabledRValueConversion (0 ms)
+[----------] 9 tests from CoreTest (0 ms total)
+
+[----------] 1 test from IsStringTest/0, where TypeParam = char
+[ RUN      ] IsStringTest/0.IsString
+[       OK ] IsStringTest/0.IsString (0 ms)
+[----------] 1 test from IsStringTest/0 (0 ms total)
+
+[----------] 1 test from IsStringTest/1, where TypeParam = wchar_t
+[ RUN      ] IsStringTest/1.IsString
+[       OK ] IsStringTest/1.IsString (0 ms)
+[----------] 1 test from IsStringTest/1 (0 ms total)
+
+[----------] 1 test from IsStringTest/2, where TypeParam = char16_t
+[ RUN      ] IsStringTest/2.IsString
+[       OK ] IsStringTest/2.IsString (0 ms)
+[----------] 1 test from IsStringTest/2 (0 ms total)
+
+[----------] 1 test from IsStringTest/3, where TypeParam = char32_t
+[ RUN      ] IsStringTest/3.IsString
+[       OK ] IsStringTest/3.IsString (0 ms)
+[----------] 1 test from IsStringTest/3 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 59 tests from 23 test cases ran. (4 ms total)
+[  PASSED  ] 59 tests.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"core-test" end time: Mar 22 11:09 CET
+"core-test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/15 Testing: gtest-extra-test
+5/15 Test: gtest-extra-test
+Command: "/home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/bin/gtest-extra-test"
+Directory: /home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/test
+"gtest-extra-test" start time: Mar 22 11:09 CET
+Output:
+----------------------------------------------------------
+[==========] Running 25 tests from 9 test cases.
+[----------] Global test environment set-up.
+[----------] 6 tests from SingleEvaluationTest
+[ RUN      ] SingleEvaluationTest.FailedEXPECT_THROW_MSG
+[       OK ] SingleEvaluationTest.FailedEXPECT_THROW_MSG (0 ms)
+[ RUN      ] SingleEvaluationTest.FailedEXPECT_SYSTEM_ERROR
+[       OK ] SingleEvaluationTest.FailedEXPECT_SYSTEM_ERROR (1 ms)
+[ RUN      ] SingleEvaluationTest.ExceptionTests
+[       OK ] SingleEvaluationTest.ExceptionTests (0 ms)
+[ RUN      ] SingleEvaluationTest.SystemErrorTests
+[       OK ] SingleEvaluationTest.SystemErrorTests (0 ms)
+[ RUN      ] SingleEvaluationTest.FailedEXPECT_WRITE
+[       OK ] SingleEvaluationTest.FailedEXPECT_WRITE (0 ms)
+[ RUN      ] SingleEvaluationTest.WriteTests
+[       OK ] SingleEvaluationTest.WriteTests (0 ms)
+[----------] 6 tests from SingleEvaluationTest (1 ms total)
+
+[----------] 3 tests from ExpectTest
+[ RUN      ] ExpectTest.EXPECT_WRITE
+[       OK ] ExpectTest.EXPECT_WRITE (0 ms)
+[ RUN      ] ExpectTest.EXPECT_THROW_MSG
+[       OK ] ExpectTest.EXPECT_THROW_MSG (0 ms)
+[ RUN      ] ExpectTest.EXPECT_SYSTEM_ERROR
+[       OK ] ExpectTest.EXPECT_SYSTEM_ERROR (0 ms)
+[----------] 3 tests from ExpectTest (0 ms total)
+
+[----------] 3 tests from StreamingAssertionsTest
+[ RUN      ] StreamingAssertionsTest.EXPECT_WRITE
+[       OK ] StreamingAssertionsTest.EXPECT_WRITE (0 ms)
+[ RUN      ] StreamingAssertionsTest.EXPECT_THROW_MSG
+[       OK ] StreamingAssertionsTest.EXPECT_THROW_MSG (0 ms)
+[ RUN      ] StreamingAssertionsTest.EXPECT_SYSTEM_ERROR
+[       OK ] StreamingAssertionsTest.EXPECT_SYSTEM_ERROR (0 ms)
+[----------] 3 tests from StreamingAssertionsTest (0 ms total)
+
+[----------] 1 test from ExpectThrowTest
+[ RUN      ] ExpectThrowTest.DoesNotGenerateUnreachableCodeWarning
+[       OK ] ExpectThrowTest.DoesNotGenerateUnreachableCodeWarning (0 ms)
+[----------] 1 test from ExpectThrowTest (0 ms total)
+
+[----------] 1 test from ExpectSystemErrorTest
+[ RUN      ] ExpectSystemErrorTest.DoesNotGenerateUnreachableCodeWarning
+[       OK ] ExpectSystemErrorTest.DoesNotGenerateUnreachableCodeWarning (0 ms)
+[----------] 1 test from ExpectSystemErrorTest (0 ms total)
+
+[----------] 3 tests from AssertionSyntaxTest
+[ RUN      ] AssertionSyntaxTest.ExceptionAssertionBehavesLikeSingleStatement
+[       OK ] AssertionSyntaxTest.ExceptionAssertionBehavesLikeSingleStatement (0 ms)
+[ RUN      ] AssertionSyntaxTest.SystemErrorAssertionBehavesLikeSingleStatement
+[       OK ] AssertionSyntaxTest.SystemErrorAssertionBehavesLikeSingleStatement (0 ms)
+[ RUN      ] AssertionSyntaxTest.WriteAssertionBehavesLikeSingleStatement
+[       OK ] AssertionSyntaxTest.WriteAssertionBehavesLikeSingleStatement (0 ms)
+[----------] 3 tests from AssertionSyntaxTest (0 ms total)
+
+[----------] 1 test from UtilTest
+[ RUN      ] UtilTest.FormatSystemError
+[       OK ] UtilTest.FormatSystemError (0 ms)
+[----------] 1 test from UtilTest (0 ms total)
+
+[----------] 1 test from ErrorCodeTest
+[ RUN      ] ErrorCodeTest.Ctor
+[       OK ] ErrorCodeTest.Ctor (0 ms)
+[----------] 1 test from ErrorCodeTest (0 ms total)
+
+[----------] 6 tests from OutputRedirectTest
+[ RUN      ] OutputRedirectTest.ScopedRedirect
+[       OK ] OutputRedirectTest.ScopedRedirect (0 ms)
+[ RUN      ] OutputRedirectTest.FlushErrorInCtor
+[       OK ] OutputRedirectTest.FlushErrorInCtor (0 ms)
+[ RUN      ] OutputRedirectTest.DupErrorInCtor
+[       OK ] OutputRedirectTest.DupErrorInCtor (0 ms)
+[ RUN      ] OutputRedirectTest.RestoreAndRead
+[       OK ] OutputRedirectTest.RestoreAndRead (0 ms)
+[ RUN      ] OutputRedirectTest.FlushErrorInRestoreAndRead
+[       OK ] OutputRedirectTest.FlushErrorInRestoreAndRead (0 ms)
+[ RUN      ] OutputRedirectTest.ErrorInDtor
+[       OK ] OutputRedirectTest.ErrorInDtor (0 ms)
+[----------] 6 tests from OutputRedirectTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 25 tests from 9 test cases ran. (1 ms total)
+[  PASSED  ] 25 tests.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"gtest-extra-test" end time: Mar 22 11:09 CET
+"gtest-extra-test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/15 Testing: format-test
+6/15 Test: format-test
+Command: "/home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/bin/format-test"
+Directory: /home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/test
+"format-test" start time: Mar 22 11:09 CET
+Output:
+----------------------------------------------------------
+[==========] Running 115 tests from 12 test cases.
+[----------] Global test environment set-up.
+[----------] 56 tests from FormatterTest
+[ RUN      ] FormatterTest.TestFormattersEnabled
+[       OK ] FormatterTest.TestFormattersEnabled (0 ms)
+[ RUN      ] FormatterTest.Escape
+[       OK ] FormatterTest.Escape (7 ms)
+[ RUN      ] FormatterTest.UnmatchedBraces
+[       OK ] FormatterTest.UnmatchedBraces (1 ms)
+[ RUN      ] FormatterTest.NoArgs
+[       OK ] FormatterTest.NoArgs (0 ms)
+[ RUN      ] FormatterTest.ArgsInDifferentPositions
+[       OK ] FormatterTest.ArgsInDifferentPositions (0 ms)
+[ RUN      ] FormatterTest.ArgErrors
+[       OK ] FormatterTest.ArgErrors (2 ms)
+[ RUN      ] FormatterTest.ManyArgs
+[       OK ] FormatterTest.ManyArgs (0 ms)
+[ RUN      ] FormatterTest.NamedArg
+[       OK ] FormatterTest.NamedArg (0 ms)
+[ RUN      ] FormatterTest.AutoArgIndex
+[       OK ] FormatterTest.AutoArgIndex (2 ms)
+[ RUN      ] FormatterTest.EmptySpecs
+[       OK ] FormatterTest.EmptySpecs (0 ms)
+[ RUN      ] FormatterTest.LeftAlign
+[       OK ] FormatterTest.LeftAlign (0 ms)
+[ RUN      ] FormatterTest.RightAlign
+[       OK ] FormatterTest.RightAlign (0 ms)
+[ RUN      ] FormatterTest.CenterAlign
+[       OK ] FormatterTest.CenterAlign (0 ms)
+[ RUN      ] FormatterTest.Fill
+[       OK ] FormatterTest.Fill (0 ms)
+[ RUN      ] FormatterTest.PlusSign
+[       OK ] FormatterTest.PlusSign (0 ms)
+[ RUN      ] FormatterTest.MinusSign
+[       OK ] FormatterTest.MinusSign (0 ms)
+[ RUN      ] FormatterTest.SpaceSign
+[       OK ] FormatterTest.SpaceSign (0 ms)
+[ RUN      ] FormatterTest.SignNotTruncated
+[       OK ] FormatterTest.SignNotTruncated (0 ms)
+[ RUN      ] FormatterTest.HashFlag
+[       OK ] FormatterTest.HashFlag (1 ms)
+[ RUN      ] FormatterTest.ZeroFlag
+[       OK ] FormatterTest.ZeroFlag (0 ms)
+[ RUN      ] FormatterTest.Width
+[       OK ] FormatterTest.Width (0 ms)
+[ RUN      ] FormatterTest.RuntimeWidth
+[       OK ] FormatterTest.RuntimeWidth (0 ms)
+[ RUN      ] FormatterTest.Precision
+[       OK ] FormatterTest.Precision (0 ms)
+[ RUN      ] FormatterTest.RuntimePrecision
+[       OK ] FormatterTest.RuntimePrecision (0 ms)
+[ RUN      ] FormatterTest.FormatShort
+[       OK ] FormatterTest.FormatShort (0 ms)
+[ RUN      ] FormatterTest.FormatInt
+[       OK ] FormatterTest.FormatInt (1 ms)
+[ RUN      ] FormatterTest.FormatBin
+[       OK ] FormatterTest.FormatBin (0 ms)
+[ RUN      ] FormatterTest.FormatDec
+[       OK ] FormatterTest.FormatDec (0 ms)
+[ RUN      ] FormatterTest.FormatHex
+[       OK ] FormatterTest.FormatHex (0 ms)
+[ RUN      ] FormatterTest.FormatOct
+[       OK ] FormatterTest.FormatOct (0 ms)
+[ RUN      ] FormatterTest.FormatIntLocale
+[       OK ] FormatterTest.FormatIntLocale (0 ms)
+[ RUN      ] FormatterTest.FormatConvertibleToLongLong
+[       OK ] FormatterTest.FormatConvertibleToLongLong (0 ms)
+[ RUN      ] FormatterTest.FormatFloat
+[       OK ] FormatterTest.FormatFloat (0 ms)
+[ RUN      ] FormatterTest.FormatDouble
+[       OK ] FormatterTest.FormatDouble (1 ms)
+[ RUN      ] FormatterTest.PrecisionRounding
+[       OK ] FormatterTest.PrecisionRounding (0 ms)
+[ RUN      ] FormatterTest.PrettifyFloat
+[       OK ] FormatterTest.PrettifyFloat (0 ms)
+[ RUN      ] FormatterTest.FormatNaN
+[       OK ] FormatterTest.FormatNaN (0 ms)
+[ RUN      ] FormatterTest.FormatInfinity
+[       OK ] FormatterTest.FormatInfinity (0 ms)
+[ RUN      ] FormatterTest.FormatLongDouble
+[       OK ] FormatterTest.FormatLongDouble (0 ms)
+[ RUN      ] FormatterTest.FormatChar
+[       OK ] FormatterTest.FormatChar (1 ms)
+[ RUN      ] FormatterTest.FormatVolatileChar
+[       OK ] FormatterTest.FormatVolatileChar (0 ms)
+[ RUN      ] FormatterTest.FormatUnsignedChar
+[       OK ] FormatterTest.FormatUnsignedChar (0 ms)
+[ RUN      ] FormatterTest.FormatWChar
+[       OK ] FormatterTest.FormatWChar (0 ms)
+[ RUN      ] FormatterTest.FormatCString
+[       OK ] FormatterTest.FormatCString (1 ms)
+[ RUN      ] FormatterTest.FormatSCharString
+[       OK ] FormatterTest.FormatSCharString (0 ms)
+[ RUN      ] FormatterTest.FormatUCharString
+[       OK ] FormatterTest.FormatUCharString (0 ms)
+[ RUN      ] FormatterTest.FormatPointer
+[       OK ] FormatterTest.FormatPointer (1 ms)
+[ RUN      ] FormatterTest.FormatString
+[       OK ] FormatterTest.FormatString (0 ms)
+[ RUN      ] FormatterTest.FormatStringView
+[       OK ] FormatterTest.FormatStringView (0 ms)
+[ RUN      ] FormatterTest.FormatCustom
+[       OK ] FormatterTest.FormatCustom (0 ms)
+[ RUN      ] FormatterTest.CustomFormat
+[       OK ] FormatterTest.CustomFormat (0 ms)
+[ RUN      ] FormatterTest.CustomFormatTo
+[       OK ] FormatterTest.CustomFormatTo (0 ms)
+[ RUN      ] FormatterTest.WideFormatString
+[       OK ] FormatterTest.WideFormatString (0 ms)
+[ RUN      ] FormatterTest.FormatStringFromSpeedTest
+[       OK ] FormatterTest.FormatStringFromSpeedTest (0 ms)
+[ RUN      ] FormatterTest.FormatExamples
+[       OK ] FormatterTest.FormatExamples (0 ms)
+[ RUN      ] FormatterTest.Examples
+[       OK ] FormatterTest.Examples (0 ms)
+[----------] 56 tests from FormatterTest (18 ms total)
+
+[----------] 8 tests from UtilTest
+[ RUN      ] UtilTest.BitCast
+[       OK ] UtilTest.BitCast (0 ms)
+[ RUN      ] UtilTest.Increment
+[       OK ] UtilTest.Increment (0 ms)
+[ RUN      ] UtilTest.ParseNonnegativeInt
+Skipping parse_nonnegative_int test
+[       OK ] UtilTest.ParseNonnegativeInt (0 ms)
+[ RUN      ] UtilTest.UTF8ToUTF16
+[       OK ] UtilTest.UTF8ToUTF16 (0 ms)
+[ RUN      ] UtilTest.UTF8ToUTF16EmptyString
+[       OK ] UtilTest.UTF8ToUTF16EmptyString (0 ms)
+[ RUN      ] UtilTest.FormatSystemError
+[       OK ] UtilTest.FormatSystemError (0 ms)
+[ RUN      ] UtilTest.SystemError
+[       OK ] UtilTest.SystemError (0 ms)
+[ RUN      ] UtilTest.ReportSystemError
+[       OK ] UtilTest.ReportSystemError (0 ms)
+[----------] 8 tests from UtilTest (0 ms total)
+
+[----------] 4 tests from IteratorTest
+[ RUN      ] IteratorTest.CountingIterator
+[       OK ] IteratorTest.CountingIterator (0 ms)
+[ RUN      ] IteratorTest.TruncatingIterator
+[       OK ] IteratorTest.TruncatingIterator (0 ms)
+[ RUN      ] IteratorTest.TruncatingBackInserter
+[       OK ] IteratorTest.TruncatingBackInserter (0 ms)
+[ RUN      ] IteratorTest.IsOutputIterator
+[       OK ] IteratorTest.IsOutputIterator (0 ms)
+[----------] 4 tests from IteratorTest (0 ms total)
+
+[----------] 7 tests from MemoryBufferTest
+[ RUN      ] MemoryBufferTest.Ctor
+[       OK ] MemoryBufferTest.Ctor (0 ms)
+[ RUN      ] MemoryBufferTest.MoveCtorInlineBuffer
+[       OK ] MemoryBufferTest.MoveCtorInlineBuffer (0 ms)
+[ RUN      ] MemoryBufferTest.MoveCtorDynamicBuffer
+[       OK ] MemoryBufferTest.MoveCtorDynamicBuffer (0 ms)
+[ RUN      ] MemoryBufferTest.MoveAssignment
+[       OK ] MemoryBufferTest.MoveAssignment (0 ms)
+[ RUN      ] MemoryBufferTest.Grow
+[       OK ] MemoryBufferTest.Grow (0 ms)
+[ RUN      ] MemoryBufferTest.Allocator
+[       OK ] MemoryBufferTest.Allocator (0 ms)
+[ RUN      ] MemoryBufferTest.ExceptionInDeallocate
+[       OK ] MemoryBufferTest.ExceptionInDeallocate (0 ms)
+[----------] 7 tests from MemoryBufferTest (0 ms total)
+
+[----------] 1 test from AllocatorTest
+[ RUN      ] AllocatorTest.allocator_ref
+[       OK ] AllocatorTest.allocator_ref (0 ms)
+[----------] 1 test from AllocatorTest (0 ms total)
+
+[----------] 1 test from StringViewTest
+[ RUN      ] StringViewTest.Ctor
+[       OK ] StringViewTest.Ctor (0 ms)
+[----------] 1 test from StringViewTest (0 ms total)
+
+[----------] 4 tests from FormatToTest
+[ RUN      ] FormatToTest.FormatWithoutArgs
+[       OK ] FormatToTest.FormatWithoutArgs (0 ms)
+[ RUN      ] FormatToTest.Format
+[       OK ] FormatToTest.Format (0 ms)
+[ RUN      ] FormatToTest.WideString
+[       OK ] FormatToTest.WideString (0 ms)
+[ RUN      ] FormatToTest.FormatToMemoryBuffer
+[       OK ] FormatToTest.FormatToMemoryBuffer (0 ms)
+[----------] 4 tests from FormatToTest (0 ms total)
+
+[----------] 1 test from BoolTest
+[ RUN      ] BoolTest.FormatBool
+[       OK ] BoolTest.FormatBool (0 ms)
+[----------] 1 test from BoolTest (0 ms total)
+
+[----------] 28 tests from FormatTest
+[ RUN      ] FormatTest.FormatExplicitlyConvertibleToWStringView
+[       OK ] FormatTest.FormatExplicitlyConvertibleToWStringView (0 ms)
+[ RUN      ] FormatTest.FormatForeignStrings
+[       OK ] FormatTest.FormatForeignStrings (0 ms)
+[ RUN      ] FormatTest.Print
+[       OK ] FormatTest.Print (0 ms)
+[ RUN      ] FormatTest.Variadic
+[       OK ] FormatTest.Variadic (0 ms)
+[ RUN      ] FormatTest.Dynamic
+[       OK ] FormatTest.Dynamic (0 ms)
+[ RUN      ] FormatTest.Bytes
+[       OK ] FormatTest.Bytes (0 ms)
+[ RUN      ] FormatTest.JoinArg
+[       OK ] FormatTest.JoinArg (0 ms)
+[ RUN      ] FormatTest.FormatMessageExample
+[       OK ] FormatTest.FormatMessageExample (0 ms)
+[ RUN      ] FormatTest.UnpackedArgs
+[       OK ] FormatTest.UnpackedArgs (0 ms)
+[ RUN      ] FormatTest.CompileTimeString
+[       OK ] FormatTest.CompileTimeString (0 ms)
+[ RUN      ] FormatTest.CustomFormatCompileTimeString
+[       OK ] FormatTest.CustomFormatCompileTimeString (0 ms)
+[ RUN      ] FormatTest.UdlTemplate
+[       OK ] FormatTest.UdlTemplate (0 ms)
+[ RUN      ] FormatTest.UdlPassUserDefinedObjectAsLvalue
+[       OK ] FormatTest.UdlPassUserDefinedObjectAsLvalue (0 ms)
+[ RUN      ] FormatTest.Enum
+[       OK ] FormatTest.Enum (0 ms)
+[ RUN      ] FormatTest.FormatterNotSpecialized
+[       OK ] FormatTest.FormatterNotSpecialized (0 ms)
+[ RUN      ] FormatTest.NonNullTerminatedFormatString
+[       OK ] FormatTest.NonNullTerminatedFormatString (0 ms)
+[ RUN      ] FormatTest.DynamicFormatter
+[       OK ] FormatTest.DynamicFormatter (0 ms)
+[ RUN      ] FormatTest.ToString
+[       OK ] FormatTest.ToString (0 ms)
+[ RUN      ] FormatTest.ToWString
+[       OK ] FormatTest.ToWString (0 ms)
+[ RUN      ] FormatTest.OutputIterators
+[       OK ] FormatTest.OutputIterators (0 ms)
+[ RUN      ] FormatTest.FormattedSize
+[       OK ] FormatTest.FormattedSize (0 ms)
+[ RUN      ] FormatTest.FormatTo
+[       OK ] FormatTest.FormatTo (0 ms)
+[ RUN      ] FormatTest.FormatToN
+[       OK ] FormatTest.FormatToN (0 ms)
+[ RUN      ] FormatTest.WideFormatToN
+[       OK ] FormatTest.WideFormatToN (0 ms)
+[ RUN      ] FormatTest.FormatToNOutputIterator
+[       OK ] FormatTest.FormatToNOutputIterator (0 ms)
+[ RUN      ] FormatTest.CharTraitsIsNotAmbiguous
+[       OK ] FormatTest.CharTraitsIsNotAmbiguous (0 ms)
+[ RUN      ] FormatTest.FormatUTF8Precision
+[       OK ] FormatTest.FormatUTF8Precision (0 ms)
+[ RUN      ] FormatTest.BackInsertSlicing
+[       OK ] FormatTest.BackInsertSlicing (0 ms)
+[----------] 28 tests from FormatTest (0 ms total)
+
+[----------] 2 tests from FormatIntTest
+[ RUN      ] FormatIntTest.Data
+[       OK ] FormatIntTest.Data (0 ms)
+[ RUN      ] FormatIntTest.FormatInt
+[       OK ] FormatIntTest.FormatInt (0 ms)
+[----------] 2 tests from FormatIntTest (0 ms total)
+
+[----------] 1 test from StrTest
+[ RUN      ] StrTest.Convert
+[       OK ] StrTest.Convert (0 ms)
+[----------] 1 test from StrTest (0 ms total)
+
+[----------] 2 tests from LiteralsTest
+[ RUN      ] LiteralsTest.Format
+[       OK ] LiteralsTest.Format (0 ms)
+[ RUN      ] LiteralsTest.NamedArg
+[       OK ] LiteralsTest.NamedArg (0 ms)
+[----------] 2 tests from LiteralsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 115 tests from 12 test cases ran. (21 ms total)
+[  PASSED  ] 115 tests.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"format-test" end time: Mar 22 11:09 CET
+"format-test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/15 Testing: format-impl-test
+7/15 Test: format-impl-test
+Command: "/home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/bin/format-impl-test"
+Directory: /home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/test
+"format-impl-test" start time: Mar 22 11:09 CET
+Output:
+----------------------------------------------------------
+[==========] Running 25 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 11 tests from BigIntTest
+[ RUN      ] BigIntTest.Construct
+[       OK ] BigIntTest.Construct (1 ms)
+[ RUN      ] BigIntTest.Compare
+[       OK ] BigIntTest.Compare (0 ms)
+[ RUN      ] BigIntTest.AddCompare
+[       OK ] BigIntTest.AddCompare (0 ms)
+[ RUN      ] BigIntTest.ShiftLeft
+[       OK ] BigIntTest.ShiftLeft (0 ms)
+[ RUN      ] BigIntTest.Multiply
+[       OK ] BigIntTest.Multiply (2 ms)
+[ RUN      ] BigIntTest.Accumulator
+[       OK ] BigIntTest.Accumulator (0 ms)
+[ RUN      ] BigIntTest.Square
+[       OK ] BigIntTest.Square (0 ms)
+[ RUN      ] BigIntTest.DivModAssignZeroDivisor
+[       OK ] BigIntTest.DivModAssignZeroDivisor (0 ms)
+[ RUN      ] BigIntTest.DivModAssignSelf
+[       OK ] BigIntTest.DivModAssignSelf (0 ms)
+[ RUN      ] BigIntTest.DivModAssignUnaligned
+[       OK ] BigIntTest.DivModAssignUnaligned (0 ms)
+[ RUN      ] BigIntTest.DivModAssign
+[       OK ] BigIntTest.DivModAssign (0 ms)
+[----------] 11 tests from BigIntTest (3 ms total)
+
+[----------] 8 tests from FPTest
+[ RUN      ] FPTest.DoubleTests
+[       OK ] FPTest.DoubleTests (0 ms)
+[ RUN      ] FPTest.Normalize
+[       OK ] FPTest.Normalize (0 ms)
+[ RUN      ] FPTest.Multiply
+[       OK ] FPTest.Multiply (0 ms)
+[ RUN      ] FPTest.GetCachedPower
+[       OK ] FPTest.GetCachedPower (2 ms)
+[ RUN      ] FPTest.DragonboxMaxK
+[       OK ] FPTest.DragonboxMaxK (0 ms)
+[ RUN      ] FPTest.GetRoundDirection
+[       OK ] FPTest.GetRoundDirection (0 ms)
+[ RUN      ] FPTest.FixedHandler
+[       OK ] FPTest.FixedHandler (0 ms)
+[ RUN      ] FPTest.GrisuFormatCompilesWithNonIEEEDouble
+[       OK ] FPTest.GrisuFormatCompilesWithNonIEEEDouble (0 ms)
+[----------] 8 tests from FPTest (2 ms total)
+
+[----------] 4 tests from FormatTest
+[ RUN      ] FormatTest.ArgConverter
+[       OK ] FormatTest.ArgConverter (0 ms)
+[ RUN      ] FormatTest.StrError
+[       OK ] FormatTest.StrError (0 ms)
+[ RUN      ] FormatTest.FormatErrorCode
+[       OK ] FormatTest.FormatErrorCode (0 ms)
+[ RUN      ] FormatTest.CountCodePoints
+[       OK ] FormatTest.CountCodePoints (0 ms)
+[----------] 4 tests from FormatTest (0 ms total)
+
+[----------] 2 tests from UtilTest
+[ RUN      ] UtilTest.CountDigits
+[       OK ] UtilTest.CountDigits (0 ms)
+[ RUN      ] UtilTest.WriteFallbackUIntPtr
+[       OK ] UtilTest.WriteFallbackUIntPtr (0 ms)
+[----------] 2 tests from UtilTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 25 tests from 4 test cases ran. (7 ms total)
+[  PASSED  ] 25 tests.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"format-impl-test" end time: Mar 22 11:09 CET
+"format-impl-test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/15 Testing: locale-test
+8/15 Test: locale-test
+Command: "/home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/bin/locale-test"
+Directory: /home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/test
+"locale-test" start time: Mar 22 11:09 CET
+Output:
+----------------------------------------------------------
+[==========] Running 6 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 5 tests from LocaleTest
+[ RUN      ] LocaleTest.DoubleDecimalPoint
+[       OK ] LocaleTest.DoubleDecimalPoint (0 ms)
+[ RUN      ] LocaleTest.Format
+[       OK ] LocaleTest.Format (0 ms)
+[ RUN      ] LocaleTest.FormatDetaultAlign
+[       OK ] LocaleTest.FormatDetaultAlign (0 ms)
+[ RUN      ] LocaleTest.WFormat
+[       OK ] LocaleTest.WFormat (0 ms)
+[ RUN      ] LocaleTest.DoubleFormatter
+[       OK ] LocaleTest.DoubleFormatter (0 ms)
+[----------] 5 tests from LocaleTest (0 ms total)
+
+[----------] 1 test from FormatTest
+[ RUN      ] FormatTest.Complex
+[       OK ] FormatTest.Complex (0 ms)
+[----------] 1 test from FormatTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 2 test cases ran. (0 ms total)
+[  PASSED  ] 6 tests.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"locale-test" end time: Mar 22 11:09 CET
+"locale-test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/15 Testing: ostream-test
+9/15 Test: ostream-test
+Command: "/home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/bin/ostream-test"
+Directory: /home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/test
+"ostream-test" start time: Mar 22 11:09 CET
+Output:
+----------------------------------------------------------
+[==========] Running 19 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 17 tests from OStreamTest
+[ RUN      ] OStreamTest.Enum
+[       OK ] OStreamTest.Enum (1 ms)
+[ RUN      ] OStreamTest.CustomArg
+[       OK ] OStreamTest.CustomArg (0 ms)
+[ RUN      ] OStreamTest.Format
+[       OK ] OStreamTest.Format (0 ms)
+[ RUN      ] OStreamTest.FormatSpecs
+[       OK ] OStreamTest.FormatSpecs (0 ms)
+[ RUN      ] OStreamTest.EmptyCustomOutput
+[       OK ] OStreamTest.EmptyCustomOutput (0 ms)
+[ RUN      ] OStreamTest.Print
+[       OK ] OStreamTest.Print (0 ms)
+[ RUN      ] OStreamTest.WriteToOStream
+[       OK ] OStreamTest.WriteToOStream (0 ms)
+[ RUN      ] OStreamTest.WriteToOStreamMaxSize
+[       OK ] OStreamTest.WriteToOStreamMaxSize (0 ms)
+[ RUN      ] OStreamTest.Join
+[       OK ] OStreamTest.Join (0 ms)
+[ RUN      ] OStreamTest.Template
+[       OK ] OStreamTest.Template (0 ms)
+[ RUN      ] OStreamTest.DisableBuiltinOStreamOperators
+[       OK ] OStreamTest.DisableBuiltinOStreamOperators (0 ms)
+[ RUN      ] OStreamTest.FormatExplicitlyConvertibleToStringLike
+[       OK ] OStreamTest.FormatExplicitlyConvertibleToStringLike (0 ms)
+[ RUN      ] OStreamTest.FormatConvertibleToBool
+[       OK ] OStreamTest.FormatConvertibleToBool (0 ms)
+[ RUN      ] OStreamTest.CopyFmt
+[       OK ] OStreamTest.CopyFmt (0 ms)
+[ RUN      ] OStreamTest.CompileTimeString
+[       OK ] OStreamTest.CompileTimeString (0 ms)
+[ RUN      ] OStreamTest.ToString
+[       OK ] OStreamTest.ToString (0 ms)
+[ RUN      ] OStreamTest.Range
+[       OK ] OStreamTest.Range (0 ms)
+[----------] 17 tests from OStreamTest (1 ms total)
+
+[----------] 2 tests from FormatTest
+[ RUN      ] FormatTest.FormatToN
+[       OK ] FormatTest.FormatToN (0 ms)
+[ RUN      ] FormatTest.UDL
+[       OK ] FormatTest.UDL (0 ms)
+[----------] 2 tests from FormatTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 19 tests from 2 test cases ran. (1 ms total)
+[  PASSED  ] 19 tests.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"ostream-test" end time: Mar 22 11:09 CET
+"ostream-test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/15 Testing: compile-test
+10/15 Test: compile-test
+Command: "/home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/bin/compile-test"
+Directory: /home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/test
+"compile-test" start time: Mar 22 11:09 CET
+Output:
+----------------------------------------------------------
+[==========] Running 8 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 8 tests from CompileTest
+[ RUN      ] CompileTest.PassStringLiteralFormat
+[       OK ] CompileTest.PassStringLiteralFormat (2 ms)
+[ RUN      ] CompileTest.FormatToArrayOfChars
+[       OK ] CompileTest.FormatToArrayOfChars (3 ms)
+[ RUN      ] CompileTest.FormatToIterator
+[       OK ] CompileTest.FormatToIterator (0 ms)
+[ RUN      ] CompileTest.FormatToN
+[       OK ] CompileTest.FormatToN (0 ms)
+[ RUN      ] CompileTest.FormattedSize
+[       OK ] CompileTest.FormattedSize (0 ms)
+[ RUN      ] CompileTest.MultipleTypes
+[       OK ] CompileTest.MultipleTypes (0 ms)
+[ RUN      ] CompileTest.FormatUserDefinedType
+[       OK ] CompileTest.FormatUserDefinedType (0 ms)
+[ RUN      ] CompileTest.EmptyFormatString
+[       OK ] CompileTest.EmptyFormatString (0 ms)
+[----------] 8 tests from CompileTest (5 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test case ran. (5 ms total)
+[  PASSED  ] 8 tests.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"compile-test" end time: Mar 22 11:09 CET
+"compile-test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/15 Testing: printf-test
+11/15 Test: printf-test
+Command: "/home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/bin/printf-test"
+Directory: /home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/test
+"printf-test" start time: Mar 22 11:09 CET
+Output:
+----------------------------------------------------------
+[==========] Running 43 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 43 tests from PrintfTest
+[ RUN      ] PrintfTest.NoArgs
+[       OK ] PrintfTest.NoArgs (3 ms)
+[ RUN      ] PrintfTest.Escape
+[       OK ] PrintfTest.Escape (3 ms)
+[ RUN      ] PrintfTest.PositionalArgs
+[       OK ] PrintfTest.PositionalArgs (1 ms)
+[ RUN      ] PrintfTest.AutomaticArgIndexing
+[       OK ] PrintfTest.AutomaticArgIndexing (0 ms)
+[ RUN      ] PrintfTest.NumberIsTooBigInArgIndex
+[       OK ] PrintfTest.NumberIsTooBigInArgIndex (2 ms)
+[ RUN      ] PrintfTest.SwitchArgIndexing
+[       OK ] PrintfTest.SwitchArgIndexing (0 ms)
+[ RUN      ] PrintfTest.InvalidArgIndex
+[       OK ] PrintfTest.InvalidArgIndex (0 ms)
+[ RUN      ] PrintfTest.DefaultAlignRight
+[       OK ] PrintfTest.DefaultAlignRight (0 ms)
+[ RUN      ] PrintfTest.ZeroFlag
+[       OK ] PrintfTest.ZeroFlag (0 ms)
+[ RUN      ] PrintfTest.PlusFlag
+[       OK ] PrintfTest.PlusFlag (0 ms)
+[ RUN      ] PrintfTest.MinusFlag
+[       OK ] PrintfTest.MinusFlag (0 ms)
+[ RUN      ] PrintfTest.SpaceFlag
+[       OK ] PrintfTest.SpaceFlag (0 ms)
+[ RUN      ] PrintfTest.HashFlag
+[       OK ] PrintfTest.HashFlag (0 ms)
+[ RUN      ] PrintfTest.Width
+[       OK ] PrintfTest.Width (0 ms)
+[ RUN      ] PrintfTest.DynamicWidth
+[       OK ] PrintfTest.DynamicWidth (0 ms)
+[ RUN      ] PrintfTest.IntPrecision
+[       OK ] PrintfTest.IntPrecision (0 ms)
+[ RUN      ] PrintfTest.FloatPrecision
+[       OK ] PrintfTest.FloatPrecision (0 ms)
+[ RUN      ] PrintfTest.StringPrecision
+[       OK ] PrintfTest.StringPrecision (0 ms)
+[ RUN      ] PrintfTest.IgnorePrecisionForNonNumericArg
+[       OK ] PrintfTest.IgnorePrecisionForNonNumericArg (0 ms)
+[ RUN      ] PrintfTest.DynamicPrecision
+[       OK ] PrintfTest.DynamicPrecision (0 ms)
+[ RUN      ] PrintfTest.Length
+[       OK ] PrintfTest.Length (11 ms)
+[ RUN      ] PrintfTest.Bool
+[       OK ] PrintfTest.Bool (0 ms)
+[ RUN      ] PrintfTest.Int
+[       OK ] PrintfTest.Int (0 ms)
+[ RUN      ] PrintfTest.long_long
+[       OK ] PrintfTest.long_long (0 ms)
+[ RUN      ] PrintfTest.Float
+[       OK ] PrintfTest.Float (0 ms)
+[ RUN      ] PrintfTest.Inf
+[       OK ] PrintfTest.Inf (0 ms)
+[ RUN      ] PrintfTest.Char
+[       OK ] PrintfTest.Char (0 ms)
+[ RUN      ] PrintfTest.String
+[       OK ] PrintfTest.String (0 ms)
+[ RUN      ] PrintfTest.UCharString
+[       OK ] PrintfTest.UCharString (0 ms)
+[ RUN      ] PrintfTest.Pointer
+[       OK ] PrintfTest.Pointer (0 ms)
+[ RUN      ] PrintfTest.Location
+[       OK ] PrintfTest.Location (0 ms)
+[ RUN      ] PrintfTest.Enum
+[       OK ] PrintfTest.Enum (0 ms)
+[ RUN      ] PrintfTest.Examples
+[       OK ] PrintfTest.Examples (0 ms)
+[ RUN      ] PrintfTest.PrintfError
+[       OK ] PrintfTest.PrintfError (0 ms)
+[ RUN      ] PrintfTest.WideString
+[       OK ] PrintfTest.WideString (0 ms)
+[ RUN      ] PrintfTest.PrintfCustom
+[       OK ] PrintfTest.PrintfCustom (0 ms)
+[ RUN      ] PrintfTest.OStream
+[       OK ] PrintfTest.OStream (0 ms)
+[ RUN      ] PrintfTest.VPrintf
+[       OK ] PrintfTest.VPrintf (0 ms)
+[ RUN      ] PrintfTest.CheckFormatStringRegression
+[       OK ] PrintfTest.CheckFormatStringRegression (0 ms)
+[ RUN      ] PrintfTest.FixedLargeExponent
+[       OK ] PrintfTest.FixedLargeExponent (0 ms)
+[ RUN      ] PrintfTest.VSPrintfMakeArgsExample
+[       OK ] PrintfTest.VSPrintfMakeArgsExample (0 ms)
+[ RUN      ] PrintfTest.VSPrintfMakeWArgsExample
+[       OK ] PrintfTest.VSPrintfMakeWArgsExample (0 ms)
+[ RUN      ] PrintfTest.PrintfDetermineOutputSize
+[       OK ] PrintfTest.PrintfDetermineOutputSize (0 ms)
+[----------] 43 tests from PrintfTest (20 ms total)
+
+[----------] Global test environment tear-down
+[==========] 43 tests from 1 test case ran. (22 ms total)
+[  PASSED  ] 43 tests.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"printf-test" end time: Mar 22 11:09 CET
+"printf-test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/15 Testing: ranges-test
+12/15 Test: ranges-test
+Command: "/home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/bin/ranges-test"
+Directory: /home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/test
+"ranges-test" start time: Mar 22 11:09 CET
+Output:
+----------------------------------------------------------
+[==========] Running 3 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 3 tests from RangesTest
+[ RUN      ] RangesTest.JoinSentinel
+[       OK ] RangesTest.JoinSentinel (0 ms)
+[ RUN      ] RangesTest.JoinRange
+[       OK ] RangesTest.JoinRange (0 ms)
+[ RUN      ] RangesTest.UnformattableRange
+[       OK ] RangesTest.UnformattableRange (0 ms)
+[----------] 3 tests from RangesTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ranges-test" end time: Mar 22 11:09 CET
+"ranges-test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/15 Testing: scan-test
+13/15 Test: scan-test
+Command: "/home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/bin/scan-test"
+Directory: /home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/test
+"scan-test" start time: Mar 22 11:09 CET
+Output:
+----------------------------------------------------------
+[==========] Running 10 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 10 tests from ScanTest
+[ RUN      ] ScanTest.ReadText
+[       OK ] ScanTest.ReadText (2 ms)
+[ RUN      ] ScanTest.ReadInt
+[       OK ] ScanTest.ReadInt (0 ms)
+[ RUN      ] ScanTest.ReadLongLong
+[       OK ] ScanTest.ReadLongLong (0 ms)
+[ RUN      ] ScanTest.ReadUInt
+[       OK ] ScanTest.ReadUInt (0 ms)
+[ RUN      ] ScanTest.ReadULongLong
+[       OK ] ScanTest.ReadULongLong (0 ms)
+[ RUN      ] ScanTest.ReadString
+[       OK ] ScanTest.ReadString (0 ms)
+[ RUN      ] ScanTest.ReadStringView
+[       OK ] ScanTest.ReadStringView (0 ms)
+[ RUN      ] ScanTest.ReadCustom
+[       OK ] ScanTest.ReadCustom (0 ms)
+[ RUN      ] ScanTest.InvalidFormat
+[       OK ] ScanTest.InvalidFormat (0 ms)
+[ RUN      ] ScanTest.Example
+[       OK ] ScanTest.Example (0 ms)
+[----------] 10 tests from ScanTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test case ran. (3 ms total)
+[  PASSED  ] 10 tests.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"scan-test" end time: Mar 22 11:09 CET
+"scan-test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/15 Testing: posix-mock-test
+14/15 Test: posix-mock-test
+Command: "/home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/bin/posix-mock-test"
+Directory: /home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/test
+"posix-mock-test" start time: Mar 22 11:09 CET
+Output:
+----------------------------------------------------------
+[==========] Running 21 tests from 5 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from UtilTest
+[ RUN      ] UtilTest.GetPageSize
+[       OK ] UtilTest.GetPageSize (5 ms)
+[----------] 1 test from UtilTest (5 ms total)
+
+[----------] 12 tests from FileTest
+[ RUN      ] FileTest.OpenRetry
+[       OK ] FileTest.OpenRetry (5 ms)
+[ RUN      ] FileTest.CloseNoRetryInDtor
+[       OK ] FileTest.CloseNoRetryInDtor (0 ms)
+[ RUN      ] FileTest.CloseNoRetry
+[       OK ] FileTest.CloseNoRetry (0 ms)
+[ RUN      ] FileTest.Size
+[       OK ] FileTest.Size (4 ms)
+[ RUN      ] FileTest.MaxSize
+[       OK ] FileTest.MaxSize (2 ms)
+[ RUN      ] FileTest.ReadRetry
+[       OK ] FileTest.ReadRetry (0 ms)
+[ RUN      ] FileTest.WriteRetry
+[       OK ] FileTest.WriteRetry (0 ms)
+[ RUN      ] FileTest.DupNoRetry
+[       OK ] FileTest.DupNoRetry (0 ms)
+[ RUN      ] FileTest.Dup2Retry
+[       OK ] FileTest.Dup2Retry (0 ms)
+[ RUN      ] FileTest.Dup2NoExceptRetry
+[       OK ] FileTest.Dup2NoExceptRetry (0 ms)
+[ RUN      ] FileTest.PipeNoRetry
+[       OK ] FileTest.PipeNoRetry (0 ms)
+[ RUN      ] FileTest.FdopenNoRetry
+[       OK ] FileTest.FdopenNoRetry (0 ms)
+[----------] 12 tests from FileTest (11 ms total)
+
+[----------] 4 tests from BufferedFileTest
+[ RUN      ] BufferedFileTest.OpenRetry
+[       OK ] BufferedFileTest.OpenRetry (2 ms)
+[ RUN      ] BufferedFileTest.CloseNoRetryInDtor
+[       OK ] BufferedFileTest.CloseNoRetryInDtor (0 ms)
+[ RUN      ] BufferedFileTest.CloseNoRetry
+[       OK ] BufferedFileTest.CloseNoRetry (0 ms)
+[ RUN      ] BufferedFileTest.FilenoNoRetry
+[       OK ] BufferedFileTest.FilenoNoRetry (0 ms)
+[----------] 4 tests from BufferedFileTest (2 ms total)
+
+[----------] 1 test from ScopedMock
+[ RUN      ] ScopedMock.Scope
+[       OK ] ScopedMock.Scope (0 ms)
+[----------] 1 test from ScopedMock (0 ms total)
+
+[----------] 3 tests from LocaleTest
+[ RUN      ] LocaleTest.LocaleMock
+[       OK ] LocaleTest.LocaleMock (0 ms)
+[ RUN      ] LocaleTest.Locale
+[       OK ] LocaleTest.Locale (0 ms)
+[ RUN      ] LocaleTest.Strtod
+[       OK ] LocaleTest.Strtod (0 ms)
+[----------] 3 tests from LocaleTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 21 tests from 5 test cases ran. (18 ms total)
+[  PASSED  ] 21 tests.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"posix-mock-test" end time: Mar 22 11:09 CET
+"posix-mock-test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/15 Testing: os-test
+15/15 Test: os-test
+Command: "/home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/bin/os-test"
+Directory: /home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/build/test
+"os-test" start time: Mar 22 11:09 CET
+Output:
+----------------------------------------------------------
+[==========] Running 42 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 12 tests from BufferedFileTest
+[ RUN      ] BufferedFileTest.DefaultCtor
+[       OK ] BufferedFileTest.DefaultCtor (0 ms)
+[ RUN      ] BufferedFileTest.MoveCtor
+[       OK ] BufferedFileTest.MoveCtor (0 ms)
+[ RUN      ] BufferedFileTest.MoveAssignment
+[       OK ] BufferedFileTest.MoveAssignment (0 ms)
+[ RUN      ] BufferedFileTest.MoveAssignmentClosesFile
+[       OK ] BufferedFileTest.MoveAssignmentClosesFile (0 ms)
+[ RUN      ] BufferedFileTest.MoveFromTemporaryInCtor
+[       OK ] BufferedFileTest.MoveFromTemporaryInCtor (0 ms)
+[ RUN      ] BufferedFileTest.MoveFromTemporaryInAssignment
+[       OK ] BufferedFileTest.MoveFromTemporaryInAssignment (0 ms)
+[ RUN      ] BufferedFileTest.MoveFromTemporaryInAssignmentClosesFile
+[       OK ] BufferedFileTest.MoveFromTemporaryInAssignmentClosesFile (0 ms)
+[ RUN      ] BufferedFileTest.CloseFileInDtor
+[       OK ] BufferedFileTest.CloseFileInDtor (0 ms)
+[ RUN      ] BufferedFileTest.CloseErrorInDtor
+[       OK ] BufferedFileTest.CloseErrorInDtor (0 ms)
+[ RUN      ] BufferedFileTest.Close
+[       OK ] BufferedFileTest.Close (0 ms)
+[ RUN      ] BufferedFileTest.CloseError
+[       OK ] BufferedFileTest.CloseError (0 ms)
+[ RUN      ] BufferedFileTest.Fileno
+
+[WARNING] /home/jakub/dev/Evo-Treatment-Plan/Sources/external/ThirdPartySrc/fmt/test/gmock-gtest-all.cc:7179:: Death tests use fork(), which is unsafe particularly in a threaded context. For this test, Google Test couldn't detect the number of threads.
+[       OK ] BufferedFileTest.Fileno (0 ms)
+[----------] 12 tests from BufferedFileTest (0 ms total)
+
+[----------] 4 tests from OStreamTest
+[ RUN      ] OStreamTest.Move
+[       OK ] OStreamTest.Move (4 ms)
+[ RUN      ] OStreamTest.Print
+[       OK ] OStreamTest.Print (4 ms)
+[ RUN      ] OStreamTest.BufferBoundary
+[       OK ] OStreamTest.BufferBoundary (4 ms)
+[ RUN      ] OStreamTest.BufferSize
+[       OK ] OStreamTest.BufferSize (7 ms)
+[----------] 4 tests from OStreamTest (19 ms total)
+
+[----------] 25 tests from FileTest
+[ RUN      ] FileTest.DefaultCtor
+[       OK ] FileTest.DefaultCtor (0 ms)
+[ RUN      ] FileTest.OpenBufferedFileInCtor
+[       OK ] FileTest.OpenBufferedFileInCtor (3 ms)
+[ RUN      ] FileTest.OpenBufferedFileError
+[       OK ] FileTest.OpenBufferedFileError (0 ms)
+[ RUN      ] FileTest.MoveCtor
+[       OK ] FileTest.MoveCtor (0 ms)
+[ RUN      ] FileTest.MoveAssignment
+[       OK ] FileTest.MoveAssignment (0 ms)
+[ RUN      ] FileTest.MoveAssignmentClosesFile
+[       OK ] FileTest.MoveAssignmentClosesFile (0 ms)
+[ RUN      ] FileTest.MoveFromTemporaryInCtor
+[       OK ] FileTest.MoveFromTemporaryInCtor (0 ms)
+[ RUN      ] FileTest.MoveFromTemporaryInAssignment
+[       OK ] FileTest.MoveFromTemporaryInAssignment (0 ms)
+[ RUN      ] FileTest.MoveFromTemporaryInAssignmentClosesFile
+[       OK ] FileTest.MoveFromTemporaryInAssignmentClosesFile (0 ms)
+[ RUN      ] FileTest.CloseFileInDtor
+[       OK ] FileTest.CloseFileInDtor (0 ms)
+[ RUN      ] FileTest.CloseErrorInDtor
+[       OK ] FileTest.CloseErrorInDtor (0 ms)
+[ RUN      ] FileTest.Close
+[       OK ] FileTest.Close (0 ms)
+[ RUN      ] FileTest.CloseError
+[       OK ] FileTest.CloseError (0 ms)
+[ RUN      ] FileTest.Read
+[       OK ] FileTest.Read (0 ms)
+[ RUN      ] FileTest.ReadError
+[       OK ] FileTest.ReadError (2 ms)
+[ RUN      ] FileTest.Write
+[       OK ] FileTest.Write (0 ms)
+[ RUN      ] FileTest.WriteError
+[       OK ] FileTest.WriteError (1 ms)
+[ RUN      ] FileTest.Dup
+[       OK ] FileTest.Dup (0 ms)
+[ RUN      ] FileTest.DupError
+[       OK ] FileTest.DupError (0 ms)
+[ RUN      ] FileTest.Dup2
+[       OK ] FileTest.Dup2 (0 ms)
+[ RUN      ] FileTest.Dup2Error
+[       OK ] FileTest.Dup2Error (0 ms)
+[ RUN      ] FileTest.Dup2NoExcept
+[       OK ] FileTest.Dup2NoExcept (0 ms)
+[ RUN      ] FileTest.Dup2NoExceptError
+[       OK ] FileTest.Dup2NoExceptError (0 ms)
+[ RUN      ] FileTest.Pipe
+[       OK ] FileTest.Pipe (0 ms)
+[ RUN      ] FileTest.Fdopen
+[       OK ] FileTest.Fdopen (0 ms)
+[----------] 25 tests from FileTest (7 ms total)
+
+[----------] 1 test from LocaleTest
+[ RUN      ] LocaleTest.Strtod
+[       OK ] LocaleTest.Strtod (0 ms)
+[----------] 1 test from LocaleTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 42 tests from 4 test cases ran. (26 ms total)
+[  PASSED  ] 42 tests.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"os-test" end time: Mar 22 11:09 CET
+"os-test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 22 11:09 CET

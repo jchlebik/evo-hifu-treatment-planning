@@ -8,7 +8,7 @@
 #               xchleb07@stud.fit.vutbr.com
 #
 # @brief        A very simple shell script to run multiple independent runs \n
-#				of optimizers on a benchmarking score. Expects user to edit \n
+#				of optimizer on a benchmarking score. Expects user to edit \n
 #				the variables
 #
 # @version      0.1

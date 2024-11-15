@@ -153,7 +153,7 @@ def createPlotOutput(outputPath, dataDictionary, run, outputName = "runPlot"):
 
 ##
 # @brief Create a plot graph showing the progression of the single variable during a run.\n
-#        Useful for non-population based optimizers
+#        Useful for non-population based optimizer
 # 
 # @param [in]   outputPath          - path to save the plot file
 # @param [in]   dataDictionary      - dictionary with data from the optimizer
@@ -189,7 +189,7 @@ def createPlotOutputSingle(outputPath, dataDictionary, run, dictKeyToPlot, outpu
 #        of all runs
 # 
 # @param [in]   outputPath          - path to save the plot file to
-# @param [in]   dataDictionary      - dictionary with aggregated data from the optimizers (medians from all runs)
+# @param [in]   dataDictionary      - dictionary with aggregated data from the optimizer (medians from all runs)
 # @param [in]   outputName          - name of the plot file
 # @return Nothing
 def createPlotEvolutionProgress(outputPath, dataDictionary, outputName = "evolutionProgressPlot"):
@@ -235,7 +235,7 @@ def createPlotEvolutionProgress(outputPath, dataDictionary, outputName = "evolut
 #        performed
 #
 # @param [in]   outputPath          - path to save the plot file to
-# @param [in]   dataDictionary      - dictionary with aggregated data from the optimizers (medians from all runs)
+# @param [in]   dataDictionary      - dictionary with aggregated data from the optimizer (medians from all runs)
 # @param [in]   outputName          - name of the plot file
 # @return Nothing
 def createPlotBestsOnFitness(outputPath, dataDictionary, outputName = "bestToFitnessPlot"):
@@ -265,7 +265,7 @@ def createPlotBestsOnFitness(outputPath, dataDictionary, outputName = "bestToFit
 # @brief Converts the resulting stats of the whole batch into boxplots graphs
 # 
 # @param [in]   outputPath          - path to save the plot file
-# @param [in]   results             - dictionary with fitness values of every individual in last generations in all ran optimizers in batch
+# @param [in]   results             - dictionary with fitness values of every individual in last generations in all ran optimizer in batch
 # @return Nothing
 def createRunsBoxplotOutput(outputPath, results, outputName = "boxplots"):
     os.makedirs(outputPath, exist_ok=True)
@@ -290,7 +290,7 @@ def createRunsBoxplotOutput(outputPath, results, outputName = "boxplots"):
 # @brief Creates a boxplot graph of all found solutions across the entire batch
 # 
 # @param [in]   outputPath          - path to save the plot file
-# @param [in]   bestSolutions       - list of found solutions from last generations of all ran optimizers in batch
+# @param [in]   bestSolutions       - list of found solutions from last generations of all ran optimizer in batch
 # @param [in]   showOutliers        - should the outliers be shown in the boxplot graph
 # @return Nothing
 def createRunsBestOutputsPlot(outputPath, bestSolutions, showOutliers, outputName = "bestsBoxplot", ylabel = "Fitness", xlabel = "", ticksNames = [], useNotches = False):
@@ -310,7 +310,7 @@ def createRunsBestOutputsPlot(outputPath, bestSolutions, showOutliers, outputNam
 # @brief Creates a boxplot graph of fitness evaluations done across the entire batch
 # 
 # @param [in]   outputPath          - path to save the plot file
-# @param [in]   fitnessCallsList    - list of resulting amount of fitness calls from all ran optimizers in batch
+# @param [in]   fitnessCallsList    - list of resulting amount of fitness calls from all ran optimizer in batch
 # @return Nothing
 def createRunsFitnessCallsBoxplot(outputPath, fitnessCallsList):
     os.makedirs(outputPath, exist_ok=True)
@@ -418,7 +418,7 @@ def generateStatistics(args, createGraphs):
                 longestRunSize = len(dataDictionary["Run"]["best"])
                 longestRunNum = i
         else:
-            print("Verbose flag was not set for optimizers, cannot generate statistics from file " + f, file=sys.stderr)
+            print("Verbose flag was not set for optimizer, cannot generate statistics from file " + f, file=sys.stderr)
         i += 1
 
 
@@ -483,10 +483,10 @@ def generateStatistics(args, createGraphs):
 
 ##
 # @brief: Main entry point of the script. Takes the path to folder containing the results of \n
-#         optimizers and the path to a folder where to store the statistics. This script \n
-#         creates statistical graphs from the results of the optimizers.
+#         optimizer and the path to a folder where to store the statistics. This script \n
+#         creates statistical graphs from the results of the optimizer.
 # 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-i', '--inputFolder', help="Path to folder containing the outputs of optimization runs. Every file with .optOut extension is used.", required=True)
     parser.add_argument('-o', '--outputFolder', help="Path to a folder where to store the statistical results", required=True)
@@ -514,3 +514,6 @@ if __name__ == "__main__":
     except Exception as err:
         print(err)
 # END of MAIN ###################################################################
+
+if __name__ == "__main__":
+    main()
